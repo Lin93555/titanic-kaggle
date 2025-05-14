@@ -37,6 +37,7 @@ titanic-kaggle/
 ├── submission/         # 提交文件（含最佳方案）
 ├── requirements.txt    # 依赖包列表
 └── README.md           # 项目说明
+
 ---
 
 ## 🚀 快速开始
@@ -47,29 +48,21 @@ cd titanic-kaggle
 pip install -r requirements.txt
 jupyter notebook
 
+---
+
 📎 推荐阅读顺序
 	1.	notebooks/0.81+_副本.ipynb → 主体代码与策略清晰记录
 	2.	submission/submission_final_ensemble_boosted.csv → 各方法输出文件
 	3.	README.md → 方法总览 + 冲分路径图
 
-## 🔧 方法对比与得分
-
-| 方法编号 | 方法名称 | 是否融合 | 是否提升 |
-|----------|----------|----------|----------|
-| 方法 A | 随机森林 + 增强特征工程 | 否 | ✅（0.78468） |
-| 方法 B | VotingClassifier 融合 | 是 | 中（~0.77990） |
-| 方法 C | Stacking 模型融合 | 是 | 中（~0.78229） |
-| 方法 D | 人工规则修正 | 是 | 否（得分下降） |
-| 方法 E | Voting + 规则组合 | 是 | 否（0.75598） |
-| 方法 F | Voting + stacking + 精修规则 | 是 | 否（0.76794） |
-| 方法 G | Voting + 伪标签半监督 + 精修规则 | 是 | 否（0.76794） |
-
-> 当前最佳方案为方法 A：**增强特征 + RandomForest 模型**
+---
 
 🙋‍♂️ 作者
 
 	本项目由 Lin93555 构建
 如果你觉得有帮助，请点击 ⭐ Star 支持一下！
+
+---
 
 📫 联系与交流
 
