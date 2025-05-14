@@ -50,21 +50,21 @@ jupyter notebook
 
 ---
 
-📎 推荐阅读顺序
+##📎 推荐阅读顺序
 	1.	notebooks/0.81+_副本.ipynb → 主体代码与策略清晰记录
 	2.	submission/submission_final_ensemble_boosted.csv → 各方法输出文件
 	3.	README.md → 方法总览 + 冲分路径图
 
 ---
 
-🙋‍♂️ 作者
+##🙋‍♂️ 作者
 
 	本项目由 Lin93555 构建
 如果你觉得有帮助，请点击 ⭐ Star 支持一下！
 
 ---
 
-📫 联系与交流
+##📫 联系与交流
 
 如需交流建模策略、Kaggle 学习方法、入门路径，欢迎联系我或发 Issue 👇
 
