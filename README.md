@@ -7,10 +7,10 @@
 
 ## 📌 项目亮点
 
-- 📦 **增强型特征工程**（姓氏/家庭/船舱/票号等高阶特征构造）
-- 🧠 **集成学习融合模型**（RandomForest、XGBoost、LightGBM、Stacking）
-- 🔁 **半监督学习伪标签**（伪标签样本反向补强训练集）
-- 🛠️ **人工规则修正机制**（针对弱模型误判人群定向优化）
+- 📦 增强型特征工程（姓氏/家庭/船舱/票号等高阶特征构造）
+- 🧠 集成学习融合模型（RandomForest、XGBoost、LightGBM、Stacking）
+- 🔁 半监督伪标签学习（使用高置信度样本扩充训练集）
+- 🛠️ 人工规则修正机制（针对弱模型误判人群定向优化）
 - 📊 多策略得分对比（冲击 0.81 的精细路线图）
 
 ---
@@ -29,14 +29,17 @@
 ---
 
 ## 📁 项目结构
+
+```
 titanic-kaggle/
 │
 ├── data/               # 原始数据（train/test）
-├── notebooks/          # Jupyter 分阶段 Notebook
+├── notebooks/          # 分阶段 Jupyter Notebook
 │   └── 0.81+_副本.ipynb
 ├── submission/         # 提交文件（含最佳方案）
 ├── requirements.txt    # 依赖包列表
 └── README.md           # 项目说明
+```
 
 ---
 
@@ -47,26 +50,32 @@ git clone https://github.com/Lin93555/titanic-kaggle.git
 cd titanic-kaggle
 pip install -r requirements.txt
 jupyter notebook
+```
 
 ---
 
-##📎 推荐阅读顺序
-	1.	notebooks/0.81+_副本.ipynb → 主体代码与策略清晰记录
-	2.	submission/submission_final_ensemble_boosted.csv → 各方法输出文件
-	3.	README.md → 方法总览 + 冲分路径图
+## 📎 推荐阅读顺序
+
+1. `notebooks/0.81+_副本.ipynb` → 主体代码与策略清晰记录  
+2. `submission/submission_final_ensemble_boosted.csv` → 各方法输出文件  
+3. `README.md` → 方法总览 + 冲分路径图  
 
 ---
 
-##🙋‍♂️ 作者
+## 📈 最佳模型提交分数
 
-	本项目由 Lin93555 构建
+🎯 **0.78468**  
+模型：增强特征 + RandomForest（单模型）
+
+---
+
+## 🙋‍♂️ 作者
+
+本项目由 [Lin93555](https://github.com/Lin93555) 构建  
 如果你觉得有帮助，请点击 ⭐ Star 支持一下！
 
 ---
 
-##📫 联系与交流
+## 📫 联系与交流
 
 如需交流建模策略、Kaggle 学习方法、入门路径，欢迎联系我或发 Issue 👇
-
----
-
